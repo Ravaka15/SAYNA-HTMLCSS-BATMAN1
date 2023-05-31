@@ -299,3 +299,23 @@ nav ul li a:hover {
     width: 80%;
     margin: 0 auto;
 }
+
+/* Multimedia */
+
+
+.logo-socio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 240px;
+}
+
+.logo-socio .socio {
+    margin-top: 15px;
+}
+
+.socio:hover {
+    filter: invert(4%) sepia(4%) saturate(7500%) hue-rotate(358deg) brightness(108%) contrast(102%);
+}
