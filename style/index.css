@@ -212,7 +212,7 @@ nav ul li a:hover {
 }
 
 .home__cinema__image img {
-    margin-right: 8%;
+    margin-right: 15%;
     margin-bottom: 10px;
   }
 
@@ -240,7 +240,7 @@ nav ul li a:hover {
 }
 
 .home__adversaire__image img {
-    margin-right: 8%;
+    margin-right: 15%;
     margin-bottom: 10px;
   }
   
@@ -264,10 +264,11 @@ nav ul li a:hover {
 .home__allies__image{
     display: flex;
     text-align: center;
+    margin-right: 50%;
 }
 
 .home__allies__image img {
-    margin-right: 8%;
+    margin: 0 50px 0 0;
     margin-bottom: 10px;
   }
 
