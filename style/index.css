@@ -38,20 +38,23 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-section{
+
+section {
     margin-bottom: 15%;
 }
+
 h1,
 h2,
 h3,
 h4,
-h5{
+h5 {
     color: var(--white-color);
 }
 
-h1{
+h1 {
     margin: 10px 10px 30px 0;
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -112,6 +115,7 @@ nav ul li a:hover {
 ::-webkit-scrollbar-track:active {
     background-color: var(--gradient-red)
 }
+
 /* Home container */
 
 .home__container {
@@ -130,40 +134,43 @@ nav ul li a:hover {
     animation-name: fade-in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-  }
-  
-  @keyframes fade-in {
+}
+
+@keyframes fade-in {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-.home__paragraphe h1{
+}
+
+.home__paragraphe h1 {
     margin-top: 10px;
     font-size: larger;
 }
+
 .fade-in-from-left {
     opacity: 0;
     transform: translateX(-100%);
     animation-name: fade-in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-  }
-  
-  @keyframes fade-in {
+}
+
+@keyframes fade-in {
     0% {
-      opacity: 0;
-      transform: translateX(-100%);
+        opacity: 0;
+        transform: translateX(-100%);
     }
+
     100% {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
-  
+}
+
 .home__bouton {
     margin-top: 20px;
     text-align: center;
@@ -173,21 +180,22 @@ nav ul li a:hover {
     width: 200px;
     height: 50px;
     margin: 15px;
-    color: var(--white-color);    
+    color: var(--white-color);
     border: none;
     cursor: pointer;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 0, 0, 0.4));
     transition: background 0.3s ease;
-  }
-  
-  .home__bouton button:hover {
+}
+
+.home__bouton button:hover {
     background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 0, 0, 1));
-  }
-  
+}
+
 .fleshe__down {
     margin-left: 47%;
     margin-top: 20%;
 }
+
 /* Home container */
 
 
@@ -199,22 +207,56 @@ nav ul li a:hover {
     margin-bottom: 10%;
 }
 
-.home__cinema__paragraphe{
+.home__cinema__paragraphe {
     width: 85%;
     font-size: larger;
     text-align: justify;
     margin-bottom: 5%;
 }
 
-.home__cinema__image{
+.home__cinema__image {
     display: flex;
-    text-align: center;
 }
 
-.home__cinema__image img {
-    margin-right: 15%;
-    margin-bottom: 10px;
-  }
+.home__cinema__images {
+    margin-right: 60px;
+    position: relative;
+    display: inline-block;
+}
+
+.home__cinema__images img {
+    margin-bottom: 1px;
+}
+.home__cinema__images img:hover {
+    width: 350px;
+    height: 500px;
+}
+.text-overlay {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0.2));
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 35%;
+}
+
+.text-overlay h2 {
+    margin-bottom: 0;
+}
+
+.text-overlay p {
+    margin: 0;
+}
+
+.home__cinema__image div:hover .text-overlay {
+    opacity: 1;
+}
 
 /* Cinema container */
 
@@ -227,14 +269,14 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-.home__adversaire__paragraphe{
+.home__adversaire__paragraphe {
     width: 85%;
     font-size: larger;
     text-align: justify;
     margin-bottom: 5%;
 }
 
-.home__adversaire__image{
+.home__adversaire__image {
     display: flex;
     text-align: center;
 }
@@ -242,8 +284,8 @@ nav ul li a:hover {
 .home__adversaire__image img {
     margin-right: 15%;
     margin-bottom: 10px;
-  }
-  
+}
+
 /* Adversaire container */
 
 
@@ -254,14 +296,14 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
-.home__allies__paragraphe{
+.home__allies__paragraphe {
     width: 85%;
     font-size: larger;
     text-align: justify;
     margin-bottom: 5%;
 }
 
-.home__allies__image{
+.home__allies__image {
     display: flex;
     text-align: center;
     margin-right: 50%;
@@ -270,18 +312,18 @@ nav ul li a:hover {
 .home__allies__image img {
     margin: 0 50px 0 0;
     margin-bottom: 10px;
-  }
+}
 
-  /* Allie container */
+/* Allie container */
 
-  /* Justice league */
+/* Justice league */
 
 .home__justiceleague {
     width: 80%;
     margin: 0 auto;
 }
 
-.home__justiceleague__paragraphe{
+.home__justiceleague__paragraphe {
     width: 85%;
     font-size: larger;
     text-align: justify;
@@ -295,7 +337,7 @@ nav ul li a:hover {
 /* Justice league */
 
 /* Multimedia */
-.multimedia{
+.multimedia {
     width: 80%;
     margin: 0 auto;
 }
