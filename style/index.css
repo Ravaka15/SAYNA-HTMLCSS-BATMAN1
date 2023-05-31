@@ -40,7 +40,7 @@ body {
 }
 
 section {
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 h1,
@@ -204,7 +204,6 @@ nav ul li a:hover {
 .home__cinema {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 10%;
 }
 
 .home__cinema__paragraphe {
@@ -282,6 +281,7 @@ nav ul li a:hover {
 
 /* Adversaire container */
 
+
 .home__adversaire {
     width: 80%;
     margin: 0 auto;
@@ -295,19 +295,69 @@ nav ul li a:hover {
 }
 
 .home__adversaire__image {
+    align-items: center;
+    width: 100%;
+    height: 600px;
     display: flex;
+}
+
+.home__adversaire__images {
+    margin-right: 60px;
+    position: relative;
+    display: inline-block;
+}
+
+.home__adversaire__images img {
+    margin-bottom: 1px;
+}
+
+.home__adversaire__images img:hover {
+    padding: 0 0 10px 0;
+    width: 350px;
+    height: 550px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0.2));
+    color: white;
+    padding: 10px;
     text-align: center;
+    width: 250px;
+    height: 70px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 20%;
 }
 
-.home__adversaire__image img {
-    margin-right: 15%;
-    margin-bottom: 10px;
+.text-overlay p {
+    margin: 0;
+    font-size: 12px;
+    transform: translate(1%, -175%);
 }
 
-/* Adversaire container */
+.text-overlay span {
+    margin: 0;
+    font-size: 12px;
+    color: var(--yellow-color);
+}
 
+.text-overlay img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: translate(-200%, -25%);
+}
+
+.home__adversaire__image div:hover .text-overlay {
+    opacity: 1;
+}
 
 /* Allie container */
+
 
 .home__allies {
     width: 80%;
@@ -322,17 +372,69 @@ nav ul li a:hover {
 }
 
 .home__allies__image {
+    align-items: center;
+    width: 100%;
+    height: 600px;
     display: flex;
+}
+
+.home__allies__images {
+    margin-right: 60px;
+    position: relative;
+    display: inline-block;
+}
+
+.home__allies__images img {
+    margin-bottom: 1px;
+}
+
+.home__allies__images img:hover {
+    padding: 0 0 10px 0;
+    width: 350px;
+    height: 550px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 0, 0, 0.2));
+    color: white;
+    padding: 10px;
     text-align: center;
-    margin-right: 50%;
+    width: 250px;
+    height: 70px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 20%;
 }
 
-.home__allies__image img {
-    margin: 0 50px 0 0;
-    margin-bottom: 10px;
+.text-overlay p {
+    margin: 0;
+    font-size: 12px;
+    transform: translate(1%, -175%);
 }
 
-/* Allie container */
+.text-overlay span {
+    margin: 0;
+    font-size: 12px;
+    color: var(--yellow-color);
+}
+
+.text-overlay img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transform: translate(-200%, -25%);
+}
+
+.home__allies__image div:hover .text-overlay {
+    opacity: 1;
+}
+
+/* 
+Allies */
 
 /* Justice league */
 
