@@ -498,40 +498,31 @@ Allies */
     margin-right: 1px;
 }
 
+
 .multimedia__content {
-    background-color: rgb(50, 190, 236);
     display: flex;
     align-items: center;
     padding: 10px;
     height: 230px;
-    width: 450px;
+    width: 550px;
     border-radius: 0 10% 10% 0;
-    border-color: var(--white-color);
+    margin-top: 5%;
 }
 
 .multimedia__contents {
-    background-color: rgb(50, 190, 236);
+    background: linear-gradient(to top, var(--blue-color), var(--gradient-gray));
+    background-color: var(--gradient-gray);
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 10px;
     height: 230px;
-    width: 450px;
     border-radius: 0 10% 10% 0;
     border-color: var(--white-color);
     margin: 0;
 }
 
-span.category1 {
-    color: red;
-}
-
-span.category2 {
-    color: blue;
-}
-
-span.category3 {
-    color: green;
+span.category {
+    color: var(--yellow-color)
 }
 
 .multimedia__contents p {
@@ -551,4 +542,7 @@ span.category3 {
 .multidia__container img[src$="Bathome_ba1.png"] {
     margin: 0;
     margin-left: 0;
+}
+.multimedia__player {
+    margin-top: 10%;
 }
